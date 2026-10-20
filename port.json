@@ -1,0 +1,46 @@
+{
+  "$schema": "https://living-code.dev/port.schema.json",
+  "schemaVersion": 1,
+  "name": "Zed",
+  "slug": "zed",
+  "group": "Editors",
+  "emoji": "⚡",
+  "description": "Living Code for Zed. Repository-owned theme files, installation instructions and four color flavors.",
+  "homepage": "https://zed.dev",
+  "quick": "See installation instructions",
+  "aliases": [
+    "zed"
+  ],
+  "flavors": [
+    "night",
+    "frost",
+    "paper",
+    "signal"
+  ],
+  "files": [
+    "extension.toml",
+    "themes/living-code.json"
+  ],
+  "images": [
+    {
+      "flavor": "night",
+      "path": "images/night.png",
+      "alt": "Zed running Living Code Night"
+    },
+    {
+      "flavor": "frost",
+      "path": "images/frost.png",
+      "alt": "Zed running Living Code Frost"
+    },
+    {
+      "flavor": "paper",
+      "path": "images/paper.png",
+      "alt": "Zed running Living Code Paper"
+    },
+    {
+      "flavor": "signal",
+      "path": "images/signal.png",
+      "alt": "Zed running Living Code Signal"
+    }
+  ]
+}

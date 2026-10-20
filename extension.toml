@@ -1,0 +1,7 @@
+id = "living-code-theme"
+name = "Living Code"
+version = "0.1.1"
+schema_version = 1
+authors = ["Living Code"]
+description = "Living Code theme for Zed. Calm slate. Living color. Night, Frost, Paper and Signal themes."
+repository = "https://github.com/living-code-theme/zed"
