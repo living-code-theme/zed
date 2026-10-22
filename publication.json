@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "artifacts": ["living-code-zed-{version}.zip", "zed-registry.toml"],
+  "channels": [
+    { "name": "Zed extension registry", "url": "https://github.com/zed-industries/extensions", "instructions": "The old prepared submission branch has been deleted. For a fresh submission, a human must follow upstream contribution/AI policies: add https://github.com/living-code-theme/zed as a submodule, pin the reviewed committed revision, and add the zed-registry.toml entry to extensions.toml. No path override is needed: extension.toml is at repository root. ZIP packaging is not registry publication. No upstream PR is created." }
+  ]
+}

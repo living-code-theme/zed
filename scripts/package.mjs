@@ -34,6 +34,9 @@ if (kind === "npm") {
   await write("Living Code.sublime-package", zip(await payload([...manifest.files.filter((path) => path.endsWith(".sublime-color-scheme")), "LICENSE"])));
 } else {
   await write(`living-code-${manifest.slug}-${pkg.version}.zip`, zip(await payload([...manifest.files, "README.md", "LICENSE"])));
+  const extension = await read("extension.toml");
+  if (!extension.toString().includes(`version = "${pkg.version}"`)) throw new Error("Keep extension.toml and package.json versions in sync");
+  await write("zed-registry.toml", `[living-code-theme]\nsubmodule = "extensions/living-code-theme"\nversion = "${pkg.version}"\n`);
   if (kind === "obsidian") {
     await write("manifest.json", await read("manifest.json"));
     await write("theme.css", await read("theme.css"));
